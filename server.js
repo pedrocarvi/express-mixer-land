@@ -1,11 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const app = express();
 const port = 3001;
 
-const apiKey = 'AIzaSyC5-9Otv8kb9Ck61cH-xRGa_tmdej5sYkE';
 const placeId = 'ChIJHe4tCPXLvJURQcxo1kNuOYc';
+const apiKey = process.env.GOOGLE_API_KEY
 
 app.use(cors()); 
 
