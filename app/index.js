@@ -3,7 +3,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const placeId = 'ChIJHe4tCPXLvJURQcxo1kNuOYc';
 const apiKey = process.env.GOOGLE_API_KEY
